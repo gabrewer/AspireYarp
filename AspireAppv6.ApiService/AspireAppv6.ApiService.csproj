@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NSwag.AspNetCore" Version="14.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AspireAppv6.ServiceDefaults\AspireAppv6.ServiceDefaults.csproj" />
   </ItemGroup>
 
