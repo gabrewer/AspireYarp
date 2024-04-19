@@ -1,4 +1,4 @@
-namespace AspireAppv6.Web;
+﻿namespace AspireAppv6.Web;
 
 public class WeatherApiClient(HttpClient httpClient)
 {
@@ -16,18 +16,6 @@ public class WeatherApiClient(HttpClient httpClient)
     )
     {
         return await GetWeatherInternalAsync("/weatherforecast_https", 10, cancellationToken);
-    }
-
-    public async Task<WeatherForecast[]> GetWeatherHttpsUnsafeAsync(
-        int maxItems = 10,
-        CancellationToken cancellationToken = default
-    )
-    {
-        return await GetWeatherInternalAsync(
-            "/weatherforecast_https_unsafe",
-            10,
-            cancellationToken
-        );
     }
 
     public async Task<WeatherForecast[]> GetWeatherInternalAsync(
