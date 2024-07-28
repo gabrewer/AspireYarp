@@ -366,7 +366,6 @@ FodyWeavers.xsd
 /.idea/.idea.TrakLearning/.idea
 /.azure
 /next-steps.md
-/azure.yaml
 .azure
 **/*.vscode
 **/*.history
